@@ -1,0 +1,67 @@
+#spinner{
+    visibility: hidden;
+    width: 80px;
+    height: 80px;
+  
+    border: 2px solid #f3f3f3;
+    border-top:3px solid #f25a41;
+    border-radius: 100%;
+  
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+  
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  #spinner.show {
+    visibility: visible;
+  }
+
+  body{
+      background-color:#eee;
+  }
+
+  body *{
+      text-align: center;
+      font-family: sans-serif;
+  }
+
+  table{
+      width:400px;
+      max-width:100%;
+      margin:0 auto;
+  }
+
+  table th{
+      border:1px solid #ddd;
+      background:#333;
+      color:#fff;
+      padding:10px;
+  }
+
+  table td{
+      border:1px solid #ddd;
+      padding:10px;
+  }
+
+  input{
+      padding:0 20px;
+      line-height: 40px;
+      border:1px solid #555;
+      border-radius:5px;
+      max-width:100%;
+      width:400px;
+      font-size:20px;
+  }
